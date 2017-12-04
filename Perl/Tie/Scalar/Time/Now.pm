@@ -6,8 +6,8 @@
 # # Description : Extremely basic module for fetching the date and/or time   # #
 # #               with localtime(time).                                      # #
 # # Coded by    : Justin "Snowed In" Lee                                     # #
-# # License     : GNU General Public License v.2                             # #
-# #               Copyright (C) 2008  Justin Lee  <kool.name at gmail.com>   # #
+# # License     : GNU General Public License v3                              # #
+# #               Copyright (C) 2008-2017  Justin Lee                        # #
 # ############################################################################ #
 #                                                                              #
 # ############################################################################ #
