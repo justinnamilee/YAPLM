@@ -7,7 +7,7 @@
 # #               with localtime(time).                                      # #
 # # Coded by    : Justin "Snowed In" Lee                                     # #
 # # License     : GNU General Public License v3                              # #
-# #               Copyright (C) 2008-2017  Justin Lee                        # #
+# #               Copyright (C) 2008-2018  Justin Lee                        # #
 # ############################################################################ #
 #                                                                              #
 # ############################################################################ #
