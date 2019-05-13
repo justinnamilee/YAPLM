@@ -4,7 +4,7 @@ package Tie::Scalar::Log;
 
 # Tie::Scalar::Log.pm:
 #
-# Copyright (C) 2013-2018  Justin Lee  < justin at taiz dot me >
+# Copyright (C) 2013-2019  Justin Lee  < justin at taiz dot me >
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License version 3
