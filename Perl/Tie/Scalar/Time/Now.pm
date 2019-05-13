@@ -7,7 +7,7 @@
 # #               with localtime(time).                                      # #
 # # Coded by    : Justin "Snowed In" Lee     < justin at taiz dot me >       # #
 # # License     : GNU General Public License v3                              # #
-# #               Copyright (C) 2008-2018  Justin Lee                        # #
+# #               Copyright (C) 2008-2019  Justin Lee                        # #
 # ############################################################################ #
 #                                                                              #
 # ############################################################################ #
@@ -55,7 +55,7 @@ sub TIESCALAR {
   if (defined($format)) {
     return bless { FORMAT => $format }, $class;
   } else {
-    return bless { FORMAT => '%4d-%02d-%02d %02d.%02d.%02d' }, $class;
+    return bless { FORMAT => '%4d-%02d-%02d %02d:%02d:%02d' }, $class;
   }
 }
 
