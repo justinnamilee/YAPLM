@@ -75,7 +75,7 @@ sub STORE {
   ref($self) or
     confess scalar(caller) . ': Reference error';
 
-  length($value) or
+  defined($value) && length($value) or
     confess scalar(caller) . ': Bad format';
 
   $self->{FORMAT} = $value; # update the format
@@ -84,7 +84,7 @@ sub STORE {
 }
 
 sub UNTIE {
-	shift->DESTROY
+  shift->DESTROY
 }
 
 sub DESTROY {
