@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+
 ################################################################################
 #                                                                              #
 # ############################################################################ #
@@ -31,7 +32,6 @@
 package Tie::Scalar::Time::Now;
 
 use strict;
-use warnings;
 use Carp;
 
 ## _flt :: fix localtime ##
@@ -70,20 +70,21 @@ sub FETCH {
 
 sub STORE {
   my $self = shift;
+  my $value = shift;
 
   ref($self) or
     confess scalar(caller) . ': Reference error';
+
+  length($value) or
+    confess scalar(caller) . ': Bad format';
+
+  $self->{FORMAT} = $value; # update the format
 
   return sprintf($self->{FORMAT},_flt(localtime(time)));
 }
 
 sub UNTIE {
-  my $self = shift;
-
-  ref($self) or
-    confess scalar(caller) . ': Reference error';
-
-  undef($self);
+	shift->DESTROY
 }
 
 sub DESTROY {
