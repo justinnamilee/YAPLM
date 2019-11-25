@@ -80,7 +80,7 @@ sub STORE {
 
   $self->{FORMAT} = $value; # update the format
 
-  return sprintf($self->{FORMAT},_flt(localtime(time)));
+  return $self->FETCH;
 }
 
 sub UNTIE {
